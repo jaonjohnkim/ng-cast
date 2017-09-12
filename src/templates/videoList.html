@@ -1,9 +1,5 @@
 <ul class="video-list">
-  <!-- <div>ctrl onClick {{$ctrl.selectVideo}}</div> -->
-  <div>on Click
-  {{$ctrl.onClick}}
-  </div>
-  <video-list-entry select-video="$ctrl.onClick" 
+  <video-list-entry select-video="$ctrl.selectVideo" 
     ng-repeat="video in $ctrl.videos" video="video">
   </video-list-entry>
 </ul>

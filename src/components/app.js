@@ -4,17 +4,14 @@ angular.module('video-player')
 
   controller: function appCtrl() {
     this.videos = exampleVideoData;
-    this.currentVideo = this.videos[0];
-
-    this.selectVideo = function (index) {
-      console.log('before', this.currentVideo);
-      //console.log(this.currentVideo);
-      this.currentVideo = this.videos[index];
-      console.log('after', this.currentVideo);
+    this.currentVideo = exampleVideoData[0];
+    var context = this;
+    this.selectVideo = (video) => {
+      console.log('Before', context.currentVideo);
+      context.currentVideo = video;
+      console.log('After', context.currentVideo);
       
     };
-    //console.log(this);
-    //console.log(this.selectVideo, this.videos);
     this.searchResults = function () {
     
     };
