@@ -7,9 +7,9 @@ angular.module('video-player')
     this.currentVideo = exampleVideoData[0];
     var context = this;
     this.selectVideo = (video) => {
-      console.log('Before', context.currentVideo);
-      context.currentVideo = video;
-      console.log('After', context.currentVideo);
+      console.log('Before', this.currentVideo);
+      this.currentVideo = video;
+      console.log('After', this.currentVideo);
       
     };
     this.searchResults = function () {
