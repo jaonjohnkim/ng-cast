@@ -6,14 +6,15 @@ angular.module('video-player')
 
     // this.videos = init.data.items;
     // this.currentVideo = exampleVideoData[0];
-    var context = this;
+    //var context = this;
     this.selectVideo = (video) => {
-      console.log('Before', this.currentVideo);
+      //console.log('Before', this.currentVideo);
       this.currentVideo = video;
-      console.log('After', this.currentVideo);
+      //console.log('After', this.currentVideo);
       
     };
     this.searchResults = (query) => {
+      //console.log(query);
       var result = youTube.search(query);
       result.then((data) => {
         this.videos = data.data.items;

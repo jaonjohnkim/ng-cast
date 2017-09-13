@@ -5,8 +5,7 @@ angular.module('video-player')
   templateUrl: 'src/templates/videoList.html',
   bindings: {
     videos: '<',
-    selectVideo: '<',
-    currentVideo: '<'
+    selectVideo: '<'
   },
   controller: function() {
     //console.log(this);
